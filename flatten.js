@@ -3,8 +3,8 @@ function flatten(arr){
   for(var i = 0; i<arr.length; i++){
     if(Array.isArray(arr[i])){
       if(arr[i].length>0){
-        var rep = flatten(arr[i]);
-        for(var j = 0; j<rep.length; j++){
+        var rec = flatten(arr[i]);
+        for(var j = 0; j<rec.length; j++){
           newarr.push(rep[j]);
         }
       }
